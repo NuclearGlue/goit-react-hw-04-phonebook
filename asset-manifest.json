@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/NuclearGlue/goit-react-hw-03phonebook.git/static/css/main.7acaea2f.css",
-    "main.js": "/NuclearGlue/goit-react-hw-03phonebook.git/static/js/main.a7d2029b.js",
+    "main.js": "/NuclearGlue/goit-react-hw-03phonebook.git/static/js/main.516097c4.js",
     "static/js/787.6b7abe35.chunk.js": "/NuclearGlue/goit-react-hw-03phonebook.git/static/js/787.6b7abe35.chunk.js",
     "index.html": "/NuclearGlue/goit-react-hw-03phonebook.git/index.html",
     "main.7acaea2f.css.map": "/NuclearGlue/goit-react-hw-03phonebook.git/static/css/main.7acaea2f.css.map",
-    "main.a7d2029b.js.map": "/NuclearGlue/goit-react-hw-03phonebook.git/static/js/main.a7d2029b.js.map",
+    "main.516097c4.js.map": "/NuclearGlue/goit-react-hw-03phonebook.git/static/js/main.516097c4.js.map",
     "787.6b7abe35.chunk.js.map": "/NuclearGlue/goit-react-hw-03phonebook.git/static/js/787.6b7abe35.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.a7d2029b.js"
+    "static/js/main.516097c4.js"
   ]
 }
