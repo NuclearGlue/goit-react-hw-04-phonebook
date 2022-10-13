@@ -5,6 +5,7 @@ import Filter from './Filter/Filter';
 import { nanoid } from 'nanoid';
 
 
+
 class App extends Component {
   state = {
     contacts: [
@@ -15,6 +16,24 @@ class App extends Component {
     ],
     filter: "",
   };
+  
+   componentDidMount() {
+     if (!localStorage.getItem('contacts')) {
+      
+      return;
+    }
+     this.setState({ contacts: JSON.parse(localStorage.getItem('contacts')) });
+     
+  }
+
+  componentDidUpdate(prevState) {
+    if (prevState.contacts === this.state.contacts) {
+      return;
+    }
+    localStorage.setItem('contacts', JSON.stringify(this.state.contacts));
+  }
+  
+  
 
   nameContactId = nanoid();
 
@@ -27,7 +46,8 @@ class App extends Component {
       ? alert(`${data.name} is already in contact`)
       : this.setState((prevState) => ({
           contacts: [data, ...prevState.contacts],
-        }));
+      }));
+     
   };
 
   deleteContacts = (contactId) => {
