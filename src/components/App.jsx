@@ -26,7 +26,7 @@ class App extends Component {
      
   }
 
-  componentDidUpdate(prevState) {
+  componentDidUpdate(prevProps,prevState) {
     if (prevState.contacts === this.state.contacts) {
       return;
     }
