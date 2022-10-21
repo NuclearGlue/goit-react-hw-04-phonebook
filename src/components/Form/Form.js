@@ -5,12 +5,10 @@ import { nanoid } from 'nanoid';
 const Form = ({ onSubmit }) => {
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
-  const [id, setId] = useState('');
 
   const handleSubmit = event => {
     event.preventDefault();
-    setId(nanoid());
-    onSubmit({ name, number, id });
+    onSubmit({ name, number, id: nanoid() });
     reset();
   };
 
@@ -67,6 +65,7 @@ const Form = ({ onSubmit }) => {
 };
 
 Form.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
   number: PropTypes.number,
   name: PropTypes.string,
 };

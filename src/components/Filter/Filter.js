@@ -17,6 +17,7 @@ function Filter({ filter, changeFilter }) {
 
 Filter.propTypes = {
   filter: PropTypes.string.isRequired,
+  changeFilter: PropTypes.func.isRequired,
 };
 
 export default Filter;

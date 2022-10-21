@@ -22,7 +22,14 @@ function Contacts({ contacts, onContactDelete }) {
 }
 
 Contacts.propTypes = {
-  contacts: PropTypes.array.isRequired,
+  contacts: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      number: PropTypes.string.isRequired,
+      id: PropTypes.string.isRequired,
+    })
+  ),
+  onContactDelete: PropTypes.func.isRequired,
 };
 
 export default Contacts;

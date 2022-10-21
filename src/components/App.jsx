@@ -31,11 +31,13 @@ const App = () => {
       
 
   const addContacts = (data) => {
-    const names = contacts.map((contact) => contact.name);
+    
+    let names = contacts.map((contact) => contact.name.toLowerCase());
 
-    names.includes(data.name)
+    names.includes(data.name.toLowerCase())
       ? alert(`${data.name} is already in contact`)
       : setContacts([data, ...contacts]);
+    console.log(names)
   };
 
   const deleteContacts = (contactId) => {
