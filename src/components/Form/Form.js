@@ -66,8 +66,6 @@ const Form = ({ onSubmit }) => {
 
 Form.propTypes = {
   onSubmit: PropTypes.func.isRequired,
-  number: PropTypes.number,
-  name: PropTypes.string,
 };
 
 export default Form;
